@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="mystyle3.css">
+<body>
+    <div class="body">
+        <h1>Image Example</h1>
+        <picture>
+      <!-- mobile phones (less than 600px wide) -->
+         <source src="./assets/type.png"    media="(max-width: 599px)">
+             
+             <!-- tablets (600px to 899px wide) -->
+             <source src="./assets/type.png"  media="(min-width: 600px) and (max-width: 899px)">
+             
+             <!-- laptops and larger devices (900px and up) -->
+             <source src="./assets/type.png"  media="(min-width: 900px)">
+             
+             <!-- Fallback image for browsers that do not support <picture> -->
+             <img src="./assets/type.png" alt="Responsive Image" class="responsive-img">
+        </picture>
+     
+         <h2>Audio Example</h2>
+         <audio controls>
+             <source src="./assets/Davido-Skelewu-(TrendyBeatz.com).mp3" type="audio/mpeg">
+             Your browser does not support the audio element.
+         </audio>
+     
+         <h3>Video Example</h3>
+         <video width="320" height="180" controls>
+             <source src="./assets/[Naijaloaded.com]_Davido Skelewu - The Movie.mp4"  type="video/mp4">
+             Your browser does not support the video tag.
+         </video>
+         <nav>
+             <a href="./table.html">Table Page</a>
+         </nav>
+    </div>
+</body>
+</html>
